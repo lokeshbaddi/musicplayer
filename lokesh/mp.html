@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="music-player">
+          <h1>Music Player</h1>
+          <div class="album-image-container">
+            <img id="albumImage" src="assets/Kushi_mv.jpg" alt="Album Cover" />
+          </div>
+          <audio id="audioPlayer" src="./assets/song5.mp3" controls>
+            <source src="" type="audio/mpeg" />
+          </audio>
+          <ul class="playlist">
+            <li data-src="./assets/song5.mp3">Kushi</li>
+            <li data-src="" id="broAlbum">Bro</li>
+          </ul>
+          
+          <div class="back-button" id="backButton" style="display: none;">Back</div>
+        </div>
+      </div>
+      <!-- Add a button to stop the song -->
+      <button id="stopButton">Stop Song</button>
+      <script src="script.js"></script>
+      <script src="server.js"></script>
+
+  </body>
+</html>
